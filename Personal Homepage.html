@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Yuze Li — Backend Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --bg-elev: #ffffff;
+    --bg-sunk: #efede7;
+    --ink: #0f1720;
+    --ink-2: #2a333d;
+    --muted: #6b7380;
+    --muted-2: #9aa1ac;
+    --line: #e4e1d8;
+    --line-strong: #d6d2c6;
+    --accent-h: 250;
+    --accent: oklch(0.58 0.13 var(--accent-h));
+    --accent-soft: oklch(0.94 0.04 var(--accent-h));
+    --accent-ink: oklch(0.42 0.15 var(--accent-h));
+    --good: oklch(0.68 0.14 155);
+    --good-soft: oklch(0.95 0.05 155);
+    --radius: 14px;
+    --radius-sm: 10px;
+    --pad: clamp(18px, 2.2vw, 28px);
+    --maxw: 1120px;
+    --density: 1;
+  }
+  [data-theme="dark"] {
+    --bg: #0d1013;
+    --bg-elev: #14181d;
+    --bg-sunk: #0a0d10;
+    --ink: #f1eee6;
+    --ink-2: #c9c6bd;
+    --muted: #8b909a;
+    --muted-2: #5f6670;
+    --line: #222931;
+    --line-strong: #30383f;
+    --accent: oklch(0.74 0.14 var(--accent-h));
+    --accent-soft: oklch(0.28 0.09 var(--accent-h));
+    --accent-ink: oklch(0.82 0.12 var(--accent-h));
+    --good: oklch(0.78 0.15 155);
+    --good-soft: oklch(0.3 0.08 155);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-feature-settings: "ss01","cv11";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+  }
+  [data-lang="zh"] body, body[data-lang="zh"] { font-family: "Noto Sans SC", "Inter", sans-serif; }
+  ::selection { background: var(--accent); color: white; }
+  a { color: inherit; text-decoration: none; }
+  .mono { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-feature-settings: "ss02","cv02"; }
+  .serif { font-family: "Instrument Sans", "Inter", sans-serif; letter-spacing: -0.01em; }
+  #root { min-height: 100vh; }
+</style>
+</head>
+<body>
+  <template id="__bundler_thumbnail">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+      <rect width="200" height="200" fill="#0f1720"/>
+      <text x="100" y="118" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="600" fill="#f1eee6" letter-spacing="-3">YL</text>
+      <circle cx="156" cy="56" r="6" fill="oklch(0.68 0.14 155)"/>
+    </svg>
+  </template>
+  <div id="root"></div>
+  <script type="text/babel" src="./app.jsx"></script>
+</body>
+</html>
