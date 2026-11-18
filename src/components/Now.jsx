@@ -5,10 +5,10 @@ export function Now({ lang }) {
   return (
     <section id="now" style={sectionWrap}>
       <SectionHeader
-        num="03"
+        num="04"
         label="Now"
         title={lang === "zh" ? "当下在做" : "What I'm doing now"}
-        kicker={lang === "zh" ? "最近更新：2026-04-23" : "Last updated: 2026-04-23"}
+        kicker={lang === "zh" ? `最近更新：${CONTENT.nowUpdated}` : `Last updated: ${CONTENT.nowUpdated}`}
       />
       <div style={{
         background: "var(--bg-elev)",

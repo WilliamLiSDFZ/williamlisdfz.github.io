@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from "react";
-import { NAV } from "../content.js";
+import { CONTENT, NAV } from "../content.js";
 
 export function CommandPalette({ open, onClose, lang, setLang, setTheme, theme }) {
   const [q, setQ] = useState("");
@@ -12,7 +12,7 @@ export function CommandPalette({ open, onClose, lang, setLang, setTheme, theme }
       { kind: "action", id: "toggle-theme", label: lang === "zh" ? "切换深色/浅色" : "Toggle dark mode", hint: theme === "dark" ? "dark → light" : "light → dark", run: () => setTheme(theme === "dark" ? "light" : "dark") },
       { kind: "action", id: "toggle-lang", label: lang === "zh" ? "English" : "中文", hint: lang === "zh" ? "zh → en" : "en → zh", run: () => setLang(lang === "zh" ? "en" : "zh") },
       { kind: "action", id: "mail", label: lang === "zh" ? "发送邮件" : "Send email", hint: "yuze@yuze.li", run: () => { window.location.href = "mailto:yuze@yuze.li"; } },
-      { kind: "action", id: "cv", label: lang === "zh" ? "下载简历" : "Download CV", hint: ".pdf" },
+      { kind: "action", id: "cv", label: lang === "zh" ? "下载简历" : "Download CV", hint: ".pdf", run: () => { window.open(CONTENT.cvHref, "_blank", "noopener"); } },
     ];
     const all = [...actions, ...nav];
     if (!q) return all;

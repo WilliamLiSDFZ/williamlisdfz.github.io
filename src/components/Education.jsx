@@ -1,31 +1,9 @@
+import { CONTENT } from "../content.js";
 import { t } from "../i18n.js";
 import { Pill, SectionHeader, sectionWrap } from "./atoms.jsx";
 
 export function Education({ lang }) {
-  const items = [
-    {
-      school: { en: "University of California, San Diego", zh: "加州大学圣地亚哥分校" },
-      degree: { en: "B.S. in Mathematics – Computer Science", zh: "数学-计算机科学学士" },
-      period: { en: "Expected 06/2027", zh: "预计 2027/06 毕业" },
-      meta: { en: "UC GPA 3.885 / 4.0 · Provost Honors", zh: "UC GPA 3.885 / 4.0 · Provost Honors" },
-      courses: [
-        "Theory of Computation", "Algorithm Design & Analysis",
-        "System Programming & Software Tools", "Computer Organization",
-        "ML: Learning Algorithms", "Computer Vision", "Data Structures",
-      ],
-    },
-    {
-      school: { en: "University of California, Davis", zh: "加州大学戴维斯分校" },
-      degree: { en: "Major: Data Science (transferred)", zh: "数据科学主修（已转学）" },
-      period: { en: "08/2023 — 09/2025", zh: "2023/08 — 2025/09" },
-      meta: { en: "Dean's Honor List · 4.0 term GPA", zh: "Dean’s Honor List · 4.0 学期 GPA" },
-      courses: [
-        "Linear Algebra", "Vector Analysis", "Numerical Analysis",
-        "Discrete Math & Graph Theory", "Probability Theory",
-        "Regression Analysis", "Statistical Data Science",
-      ],
-    },
-  ];
+  const items = CONTENT.education;
   return (
     <section id="education" style={sectionWrap}>
       <SectionHeader num="02" label={lang === "zh" ? "教育" : "Education"} title={lang === "zh" ? "教育经历" : "Education"} />

@@ -64,7 +64,7 @@ export function Hero({ lang }) {
             }}>
               {lang === "zh" ? "看看经历" : "See experience"}
             </a>
-            <a href="#" style={{
+            <a href={CONTENT.cvHref} target="_blank" rel="noopener noreferrer" style={{
               padding: "10px 16px", background: "transparent", color: "var(--ink-2)",
               border: "1px solid var(--line)", borderRadius: 10, fontSize: 14, fontWeight: 500,
             }}>

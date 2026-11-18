@@ -5,7 +5,7 @@ import { SectionHeader, sectionWrap } from "./atoms.jsx";
 export function OSS({ lang }) {
   return (
     <section id="oss" style={sectionWrap}>
-      <SectionHeader num="06" label={lang === "zh" ? "开源" : "Open source"} title={lang === "zh" ? "个人仓库" : "Repositories"} />
+      <SectionHeader num="07" label={lang === "zh" ? "开源" : "Open source"} title={lang === "zh" ? "个人仓库" : "Repositories"} />
       <div style={{
         background: "var(--bg-elev)", border: "1px solid var(--line)", borderRadius: "var(--radius)",
         overflow: "hidden",

@@ -4,7 +4,7 @@ import { SectionHeader, sectionWrap } from "./atoms.jsx";
 export function Contact({ lang }) {
   return (
     <section id="contact" style={{ ...sectionWrap, paddingBottom: "calc(96px * var(--density))" }}>
-      <SectionHeader num="08" label={lang === "zh" ? "联系" : "Contact"} title={lang === "zh" ? "保持联系" : "Say hello"} />
+      <SectionHeader num="09" label={lang === "zh" ? "联系" : "Contact"} title={lang === "zh" ? "保持联系" : "Say hello"} />
       <div style={{
         background: "var(--ink)",
         color: "var(--bg)",

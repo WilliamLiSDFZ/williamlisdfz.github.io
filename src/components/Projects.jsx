@@ -5,7 +5,7 @@ import { SectionHeader, sectionWrap } from "./atoms.jsx";
 export function Projects({ lang }) {
   return (
     <section id="projects" style={sectionWrap}>
-      <SectionHeader num="05" label={lang === "zh" ? "项目" : "Projects"} title={lang === "zh" ? "近期项目" : "Selected projects"} />
+      <SectionHeader num="06" label={lang === "zh" ? "项目" : "Projects"} title={lang === "zh" ? "近期项目" : "Selected projects"} />
       <div style={{
         display: "grid",
         gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",

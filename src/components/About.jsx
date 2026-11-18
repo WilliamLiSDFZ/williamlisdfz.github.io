@@ -1,4 +1,5 @@
 import { CONTENT } from "../content.js";
+import { t } from "../i18n.js";
 import { AsideKV, SectionHeader, sectionWrap } from "./atoms.jsx";
 
 export function About({ lang }) {
@@ -21,9 +22,9 @@ export function About({ lang }) {
           <AsideKV k={lang === "zh" ? "现居" : "Based"} v={lang === "zh" ? "加州圣地亚哥" : "San Diego, CA"} />
           <AsideKV k={lang === "zh" ? "时区" : "Timezone"} v="UTC−8 (PT)" />
           <AsideKV k={lang === "zh" ? "学校" : "School"} v={lang === "zh" ? "UCSD · 2027 毕业" : "UCSD · class of 2027"} />
-          <AsideKV k={lang === "zh" ? "GPA" : "GPA"} v="3.885 / 4.0" />
+          <AsideKV k={lang === "zh" ? "GPA" : "GPA"} v={CONTENT.gpa} />
           <AsideKV k={lang === "zh" ? "语言" : "Languages"} v={lang === "zh" ? "中文 · 英文" : "Chinese · English"} />
-          <AsideKV k={lang === "zh" ? "寻找" : "Seeking"} v={lang === "zh" ? "2026 夏实习" : "Summer 2026 intern"} />
+          <AsideKV k={lang === "zh" ? "寻找" : "Seeking"} v={t(CONTENT.seeking, lang)} />
           <hr style={{ border: 0, borderTop: "1px dashed var(--line)", margin: "4px 0" }} />
           <div className="mono" style={{ fontSize: 11, color: "var(--muted)", lineHeight: 1.6 }}>
             $ whoami<br/>

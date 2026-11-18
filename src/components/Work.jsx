@@ -5,7 +5,7 @@ import { Pill, SectionHeader, sectionWrap } from "./atoms.jsx";
 export function Work({ lang }) {
   return (
     <section id="work" style={sectionWrap}>
-      <SectionHeader num="04" label={lang === "zh" ? "经历" : "Work"} title={lang === "zh" ? "工作经历" : "Experience"} />
+      <SectionHeader num="05" label={lang === "zh" ? "经历" : "Work"} title={lang === "zh" ? "工作经历" : "Experience"} />
       <div style={{ display: "grid", gap: 14 }}>
         {CONTENT.work.map((job, i) => (
           <article key={i} style={{
