@@ -25,7 +25,7 @@ export const CONTENT = {
       "On the research side I work on analogy-augmented ML: building a 38k-paper knowledge base and retrieval agents that help AutoML systems like MLEvolve borrow mechanisms from other domains. Outside of both, I build things in C/C++ to stay close to the metal — allocators, shells, compressors, graph libraries.",
     ],
     zh: [
-      "我是李宇泽——UCSD 数学与计算机本科在读（预计 2027 毕业），同时是 Unifinity AI 的联合创始人兼工程 VP，我们在做一个面向中小企业的 AI 营销平台。创业这边日常主要写 Java + Spring Boot，设计微服务、认证系统和实时数据管道。",
+      "我是李雨泽——UCSD 数学与计算机本科在读（预计 2027 毕业），同时是 Unifinity AI 的联合创始人兼工程 VP，我们在做一个面向中小企业的 AI 营销平台。创业这边日常主要写 Java + Spring Boot，设计微服务、认证系统和实时数据管道。",
       "研究方面我在做类比增强的机器学习：搭建 3.8 万篇论文的知识库和检索 agent，帮助 MLEvolve 等 AutoML 系统从其他领域借鉴机制。除此之外，会用 C/C++ 写点贴近底层的东西——内存分配器、shell、压缩工具、图算法库。",
     ],
   },
@@ -243,6 +243,7 @@ export const CONTENT = {
     { label: "LinkedIn",value: "linkedin.com/in/yuze-li-093b67342", href: "https://www.linkedin.com/in/yuze-li-093b67342/" },
   ],
   cvHref: `${import.meta.env.BASE_URL}uploads/CV_YuzeLi.pdf`,
+  photo: `${import.meta.env.BASE_URL}uploads/avatar.jpg`,
 };
 
 export const NAV = [

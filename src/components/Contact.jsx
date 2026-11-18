@@ -52,8 +52,8 @@ export function Contact({ lang }) {
         marginTop: 28, display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8,
         fontFamily: '"JetBrains Mono", monospace', fontSize: 11, color: "var(--muted)",
       }}>
-        <span>© 2026 {CONTENT.name} · {lang === "zh" ? "用 HTML 手写" : "Handcrafted in HTML"}</span>
-        <span>{lang === "zh" ? "最后部署" : "Last deploy"} · 2026-04-23 · commit <span style={{ color: "var(--ink-2)" }}>a3f91c</span></span>
+        <span>© 2026 {CONTENT.name}</span>
+        <span>{lang === "zh" ? "最后更新" : "Last update"} · 2026-11-18</span>
       </footer>
     </section>
   );

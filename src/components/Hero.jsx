@@ -75,16 +75,17 @@ export function Hero({ lang }) {
 
         {/* Avatar + live widget */}
         <div style={{ display: "flex", flexDirection: "column", gap: 14, alignItems: "flex-end" }}>
-          <div style={{
-            width: 168, height: 168, borderRadius: 20,
-            background: "repeating-linear-gradient(135deg, var(--bg-sunk) 0 8px, var(--bg-elev) 8px 16px)",
-            border: "1px solid var(--line)",
-            display: "grid", placeItems: "center",
-            color: "var(--muted-2)", fontSize: 11,
-            fontFamily: '"JetBrains Mono", monospace', letterSpacing: "0.04em",
-          }}>
-            photo · 512×512
-          </div>
+          <img
+            src={CONTENT.photo}
+            alt={lang === "zh" ? "李宇泽的照片" : "Photo of Yuze Li"}
+            width={168} height={168}
+            style={{
+              width: 168, height: 168, borderRadius: 20,
+              objectFit: "cover", display: "block",
+              border: "1px solid var(--line)",
+              background: "var(--bg-sunk)",
+            }}
+          />
           <div style={{
             width: 168,
             background: "var(--bg-elev)", border: "1px solid var(--line)",

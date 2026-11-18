@@ -23,7 +23,7 @@ export function TopNav({ lang, setLang, theme, setTheme, openPalette }) {
           <div style={{ fontSize: 14, fontWeight: 500 }}>
             {CONTENT.name}
             <span className="mono" style={{ color: "var(--muted)", marginLeft: 8, fontWeight: 400, fontSize: 12 }}>
-              {lang === "zh" ? CONTENT.nameZh : "backend.eng"}
+              {lang === "zh" ? CONTENT.nameZh : ""}
             </span>
           </div>
         </a>
